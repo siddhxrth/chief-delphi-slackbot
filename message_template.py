@@ -8,6 +8,7 @@
 #############################################################################
 
 from datetime import datetime
+import requests
 
 def createPayload(latest_technical_post):
 
@@ -68,3 +69,6 @@ def createPayload(latest_technical_post):
     }
 
     return data
+
+def test_data():
+    assert createPayload(requests.get("https://www.chiefdelphi.com/c/technical/9/l/latest.json").json()['topic_list']['topics'][1])

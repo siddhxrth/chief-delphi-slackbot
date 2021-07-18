@@ -7,7 +7,7 @@
 #
 #############################################################################
 
-import requests, json, message_template, time, setup
+import requests, json, message_template, time, setup, pytest
 
 headers = {
     'Content-type': 'application/json',
