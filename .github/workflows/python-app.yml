@@ -22,7 +22,8 @@ jobs:
         python-version: 3.9
     - name: Install dependencies
       run: |
-        pip3 install requests, pytest
+        pip3 install requests
+        pip3 install pytest
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
