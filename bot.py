@@ -15,12 +15,12 @@ headers = {
 
 latest_techincal = requests.get("https://www.chiefdelphi.com/c/technical/9/l/latest.json").json()['topic_list']['topics']
 
-previous_latest_topic = None
+previous_latest_topic = latest_techincal[1]
 
 while True:
     latest_techincal = requests.get("https://www.chiefdelphi.com/c/technical/9/l/latest.json").json()['topic_list']['topics'][1]
 
-    if (latest_techincal != previous_latest_topic):
+    if (latest_techincal["title"] != previous_latest_topic["title"]):
         data = message_template.createPayload(latest_techincal)
         requests.post(setup.WEBHOOK_URL, headers=headers, data=json.dumps(data))
         previous_latest_topic = latest_techincal

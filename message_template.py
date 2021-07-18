@@ -16,7 +16,6 @@ def createPayload(latest_technical_post):
         "attachments": [
             {
                 "color": "#c55100",
-                # "pretext": "new techincal chief delphi post",
                 "blocks": [
                     {
                         "type": "header",
