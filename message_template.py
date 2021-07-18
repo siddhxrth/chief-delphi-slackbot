@@ -69,16 +69,3 @@ def createPayload(latest_technical_post):
     }
 
     return data
-
-# We’re trying to get our Romi to read an Ultrasonic sensor (HC-SR04) to help the students understand how avoid obstacle’s using sensors.   However, we are not able to get the Ultrasonic sensor object... <https://google.com|View More>
-
-# {
-#                     "type": "image",
-#                             "title": {
-#                                 "type": "plain_text",
-#                                 "text": "attachment.png",
-#                                 "emoji": True
-#                             },
-#                     "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/4/a/4ac68bc3c2df9fd9c0584566d608622629f1024a.png",
-#                     "alt_text": "marg"
-#                 }
